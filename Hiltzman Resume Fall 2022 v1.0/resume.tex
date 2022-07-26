@@ -1,0 +1,47 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+%====================
+%
+% Files:        resume.tex: Main file
+%               _header.tex: header code
+%               TLCresume.sty: style file containing formatting details
+%               section/objective: https://www.indeed.com/career-advice/resumes-cover-letters/resume-objective-examples
+%               section/skills: table of skills
+%               section/experience: projects or roles
+%               section/education: schools and stuff
+%               section/activities: optional, could comment out in resume.tex.
+%====================
+
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{David Hiltzman} % Name Here
+\def\phone{918-352-8354}
+\def\city{Stillwater, OK}
+\def\email{david.hiltzman@gmail.com}
+\def\LinkedIn{david-hiltzman} % linkedin.com/in/______
+\def\github{dhiltzman} % github username
+
+\input{_header}
+\begin{document}
+
+\section{Education}
+\input{sections/education}
+
+\section{Projects}
+\input{sections/projects}
+
+\section{Professional Experience}
+\input{sections/experience}
+
+\section{Leadership and Service}
+\input{sections/leadership}
+
+\section{Technical Skills}
+\input{sections/skills}
+% make a newpage wherever it is a clean break
+% \newpage
+\end{document}
